@@ -1,0 +1,35 @@
+{
+  "name": "nextjs-airtable",
+  "version": "1.0.0",
+  "description": "Simple app built with Next.js and Airtable.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjbrum/nextjs-airtable.git"
+  },
+  "keywords": [],
+  "author": "Kyle Brumm <kjbrumm@gmail.com> (http://kylebrumm.com)",
+  "license": "ISC",
+  "dependencies": {
+    "airtable": "^0.6.0",
+    "dateformat": "^3.0.3",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-markdown": "^4.1.0",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
