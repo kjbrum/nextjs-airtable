@@ -22,7 +22,7 @@ class Single extends React.Component {
 Single.getInitialProps = async context => {
 	const basePath =
 		process.env.NODE_ENV === 'development'
-			? `http://localhost:${process.env.PORT}`
+			? `http://localhost:${process.env.PORT || 3000}`
 			: process.env.SITE_URL
 	const { id } = context.query
 
