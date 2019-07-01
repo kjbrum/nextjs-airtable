@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "name": "nextjs-airtable",
+    "alias": "nextjs-airtable",
+    "builds": [
+        { "src": "server.js", "use": "@now/node" },
+        { "src": "next.config.js", "use": "@now/next" }
+    ],
+    "env": {
+        "SITE_URL": "https://nextjs-airtable.kylebrumm.now.sh",
+        "AIRTABLE_API_KEY": "@airtable-api-key",
+        "AIRTABLE_BASE_ID": "@airtable-next-app-base-id",
+        "AIRTABLE_TABLE_NAME": "posts"
+    }
+}

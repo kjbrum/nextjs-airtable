@@ -148,3 +148,5 @@ const getAirtablePost = recordId => {
 		)
 	})
 }
+
+module.exports = app
