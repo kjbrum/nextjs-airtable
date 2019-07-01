@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch'
 
+// Components
 import Layout from '../components/Layout'
 import PostBlock from '../components/PostBlock'
 

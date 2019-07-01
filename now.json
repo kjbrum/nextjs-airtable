@@ -3,8 +3,11 @@
     "name": "nextjs-airtable",
     "alias": "nextjs-airtable",
     "builds": [
-        { "src": "server.js", "use": "@now/node" },
+        { "src": "api/**/*.js", "use": "@now/node" },
         { "src": "next.config.js", "use": "@now/next" }
+    ],
+    "routes": [
+        { "src": "/post/(?<id>[^/]+)", "dest": "/single?id=$id" }
     ],
     "env": {
         "SITE_URL": "https://nextjs-airtable.now.sh",

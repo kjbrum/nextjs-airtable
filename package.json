@@ -9,7 +9,7 @@
     "now-build": "next build",
     "start": "NODE_ENV=production node server.js",
     "export": "next export",
-    "deploy": "npm run build && npm run export"
+    "deploy": "now --target production"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,6 @@
   "dependencies": {
     "airtable": "^0.6.0",
     "dateformat": "^3.0.3",
-    "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.1.0",

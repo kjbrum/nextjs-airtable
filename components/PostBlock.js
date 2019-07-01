@@ -3,14 +3,14 @@ import dateFormat from 'dateformat'
 
 class Post extends React.Component {
 	render() {
-		const { id, slug, title, publish_date } = this.props
+		const { id, title, publish_date } = this.props
 
-		const permalink = !!id ? `/post/${id}/${slug}` : false
+		const permalink = !!id ? `/post/${id}` : false
 
 		return (
 			<div className="post-block">
 				<Link href={permalink}>
-					<a title="Permalink for this post">
+					<a title={title}>
 						{title && <h2>{title}</h2>}
 						{publish_date && (
 							<time

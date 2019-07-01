@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch'
 
+// Components
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 
@@ -26,7 +27,7 @@ Single.getInitialProps = async context => {
 			: process.env.SITE_URL
 	const { id } = context.query
 
-	const res = await fetch(`${basePath}/api/post/${id}`)
+	const res = await fetch(`${basePath}/api/post?id=${id}`)
 	const airtablePost = await res.json()
 
 	return airtablePost ? airtablePost.data : {}
