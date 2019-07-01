@@ -1,7 +1,7 @@
 {
   "name": "nextjs-airtable",
   "version": "1.0.0",
-  "description": "Simple app built with Next.js and Airtable.",
+  "description": "Serverless app built with Next.js and Airtable, hosted on Now.",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development nodemon server.js",
