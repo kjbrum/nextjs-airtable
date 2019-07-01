@@ -7,7 +7,7 @@
         { "src": "next.config.js", "use": "@now/next" }
     ],
     "env": {
-        "SITE_URL": "https://nextjs-airtable.kylebrumm.now.sh",
+        "SITE_URL": "https://nextjs-airtable.now.sh",
         "AIRTABLE_API_KEY": "@airtable-api-key",
         "AIRTABLE_BASE_ID": "@airtable-next-app-base-id",
         "AIRTABLE_TABLE_NAME": "posts"
