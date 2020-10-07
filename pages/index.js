@@ -47,6 +47,8 @@ class Home extends React.Component {
 		} else {
 			return (
 				<Layout>
+					<h1>Next.js + Airtable</h1>
+					
 					{airtablePosts.map(post => (
 						<PostBlock
 							key={post.id}
