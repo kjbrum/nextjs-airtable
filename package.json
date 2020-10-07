@@ -19,7 +19,7 @@
   "author": "Kyle Brumm <kjbrumm@gmail.com> (http://kylebrumm.com)",
   "license": "ISC",
   "dependencies": {
-    "airtable": "^0.6.0",
+    "airtable": "^0.7.2",
     "dateformat": "^3.0.3",
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
